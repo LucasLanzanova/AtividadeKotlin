@@ -1,0 +1,4 @@
+C:\Users\lucas\AndroidStudioProjects\AtividadeProva\app\src\main\java\com\example\prova\MainActivity.kt
+C:\Users\lucas\AndroidStudioProjects\AtividadeProva\app\src\main\java\com\example\prova\ui\theme\Color.kt
+C:\Users\lucas\AndroidStudioProjects\AtividadeProva\app\src\main\java\com\example\prova\ui\theme\Theme.kt
+C:\Users\lucas\AndroidStudioProjects\AtividadeProva\app\src\main\java\com\example\prova\ui\theme\Type.kt

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CALCULADORA DE PERÍMETRO\nÁREA E COMBUSTÍVEL"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LARGURA A (ou LADO)" android:textStyle="bold" />
+        <EditText android:id="@+id/etEntradaLargura" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ALTURA A" android:textStyle="bold" />
+        <EditText android:id="@+id/etEntradaAltura" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PERÍMETRO:" android:textSize="16sp" />
+            <TextView android:id="@+id/tvSaidaPerimetro" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="00000" android:textSize="28sp" android:textStyle="bold" android:textColor="#000000" android:gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ÁREA:" android:textSize="16sp" />
+            <TextView android:id="@+id/tvSaidaArea" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="00000" android:textSize="28sp" android:textStyle="bold" android:textColor="#000000" android:gravity="end" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btProcessarGeometria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calcular Geometria"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tempo da Viagem (horas)" android:textStyle="bold" />
+        <EditText android:id="@+id/etEntradaTempo" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Velocidade Média (km/h)" android:textStyle="bold" />
+        <EditText android:id="@+id/etEntradaVelocidade" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consumo Médio (km/lt)" android:textStyle="bold" />
+        <EditText android:id="@+id/etEntradaMediaComb" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Combustível utilizado:" android:textSize="16sp" />
+        <TextView android:id="@+id/tvSaidaLitros" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="00000 Lts" android:textSize="28sp" android:textStyle="bold" android:textColor="#000000" android:gravity="end" />
+
+        <Button
+            android:id="@+id/btProcessarViagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Processar Viagem"
+            android:backgroundTint="#FFFFFF"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+</ScrollView>
